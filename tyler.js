@@ -20,18 +20,10 @@ function selectcards(array){
 //here the user will selectcards
 //userinput= (selected cards in an array)
 
-//
-// let element = document.querySelector("#selected_cards");
-//
-// for(let i=0; i<element.length; i++){
-//   selectedcards.push(element[i]);
-//   console.log(element[i]);
-//
-// }
 var size = 4; //Maximum Array size
 for(var i=0; i<size; i++) {
 	//Taking Input from user
-	selectedCards[i] = prompt('Enter Element ' + (i+1));
+	selectedCards[i] = prompt('Select your cards to put down ' + (i+1));
 }
 console.log(selectedCards);
 
@@ -52,6 +44,6 @@ let selectedCards=[];
 
 
 selectcards(cards);
-console.log(trashpile);
-putdowncards(selectedcards);
+putdowncards();
+
 console.log(trashpile);
