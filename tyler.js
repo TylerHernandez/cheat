@@ -1,5 +1,5 @@
 
-  let element = document.querySelector("#selected_cards");
+
 
 function shuffle(array) {
   array.sort(() => Math.random() - 0.5);
@@ -20,25 +20,38 @@ function selectcards(array){
 //here the user will selectcards
 //userinput= (selected cards in an array)
 
-
-
-
+//
+// let element = document.querySelector("#selected_cards");
+//
+// for(let i=0; i<element.length; i++){
+//   selectedcards.push(element[i]);
+//   console.log(element[i]);
+//
+// }
+var size = 4; //Maximum Array size
+for(var i=0; i<size; i++) {
+	//Taking Input from user
+	selectedCards[i] = prompt('Enter Element ' + (i+1));
+}
+console.log(selectedCards);
 
 }
 
 
-function putdowncards(selectedcards){
+function putdowncards(){
 
-for(let i=0; i<selectedcards.length; i++){
-  trashpile.push(selectedcards[i]);
+for(let i=0; i<selectedCards.length; i++){
+  trashpile.push(selectedCards[i]);
 }
 
 
 }
 
 let trashpile=[];
-let selectedcards=[1,2,3];
+let selectedCards=[];
 
+
+selectcards(cards);
 console.log(trashpile);
 putdowncards(selectedcards);
 console.log(trashpile);
