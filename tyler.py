@@ -1,19 +1,34 @@
 import random
-carddeck = [["RedAce", "BlackAce"],["RedOne","BlackOne"]]
-# print carddeck[0][1]
-#     carddeck [0][0]= "RedAce"
+#from sklearn.utils import shuffle
+# carddeck = [["RedAce", "BlackAce"],["RedOne","BlackOne"]]
+# # print carddeck[0][1]
+# #     carddeck [0][0]= "RedAce"
+#
+# usershand= [carddeck[0][1], carddeck [1][0]]
+#
+# print usershand
+#
+#
+# def shuffle():
+#     for x in
+#     userhand= [carddeck[randomint]
+#
+#
+# for(int i=0; i<52/(playercount); i++)
+# {
+# userhand.add(carddeck[randomint][randomint])
+# }
 
-usershand= [carddeck[0][1], carddeck [1][0]]
 
-print usershand
+cards= [1,2,3,4,5,6,7,8,9,10]
 
+random.shuffle(cards)
 
-def shuffle():
-    for x in
-    userhand= [carddeck[randomint]
+print cards
 
+def shuffle(array):
+        random.shuffle(array)
+        print array
+        return array
 
-for(int i=0; i<52/(playercount); i++)
-{
-userhand.add(carddeck[randomint][randomint])
-}
+my_shuffle(cards)
