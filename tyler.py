@@ -27,8 +27,8 @@ random.shuffle(cards)
 print cards
 
 def shuffle(array):
-        random.shuffle(array)
+        random.shuffle(array);
         print array
         return array
 
-my_shuffle(cards)
+my_shuffle(cards);
