@@ -1,3 +1,6 @@
+cards=[1,2,3,4,5,6,7,8,9,10];
+let trashpile=[];
+let selectedCards=[];
 
 
 
@@ -5,7 +8,6 @@ function shuffle(array) {
   array.sort(() => Math.random() - 0.5);
 }
 
-cards=[1,2,3,4,5,6,7,8,9,10];
 console.log(cards);
 shuffle(cards);
 console.log(cards);
@@ -39,8 +41,6 @@ for(let i=0; i<selectedCards.length; i++){
 
 }
 
-let trashpile=[];
-let selectedCards=[];
 
 
 selectcards(cards);
