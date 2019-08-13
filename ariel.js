@@ -170,3 +170,37 @@ P3 = new Player2("Sherm");
 console.log(P3.cards);
 P4 = new Player2("Sherm");
 console.log(P4.cards);;
+
+function selectcards(array){
+
+//e.g. cards selected are [#32, #3, #18]
+
+//user: select your cards to put down:
+//you have : red ace (index #2), black queen(index #49), etc)
+//their index locations will be how we put down their cards
+//here the user will selectcards
+//userinput= (selected cards in an array)
+
+  var size = 4; //Maximum Array size
+  for(var i=0; i<size; i++) {
+  	//Taking Input from user
+  	selectedCards[i] = prompt('Select your cards to put down ' + (i+1));
+  }
+  console.log(selectedCards);
+}
+
+
+function putdowncards(){
+  for(let i=0; i<selectedCards.length; i++){
+    trashpile.push(selectedCards[i]);
+  }
+}
+
+let trashpile=[];
+let selectedCards=[];
+
+
+selectcards(P1.cards);
+putdowncards();
+
+console.log(trashpile);
