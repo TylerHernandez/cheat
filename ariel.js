@@ -198,8 +198,11 @@ function putdowncards(){
 
 let trashpile=[];
 let selectedCards=[];
-
-
+let myDeck = [];
+for(let x  = 0; x < 13; x++){
+  myDeck.push(P1.cards[x].type + " " + P1.cards[x].numValue)
+}
+console.log(myDeck);
 selectcards(P1.cards);
 putdowncards();
 
